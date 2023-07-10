@@ -3,20 +3,72 @@
     margin: 0;
 } */
 body{
-    background-color: rgb(244, 187, 220); ;
-}
+    /* background-color: rgb(244, 187, 220); ; */
+    
+     background-image: url("../public/bg-img.jpg")!important;
+     /* 
+      */
+       /* background-repeat: no-repeat; */
+       background-size: cover;
+       background-position: center;
+     transition: 0.4 ease-out;
+    }
 .container{
     width: 100%;
     height: 80vh;
     /* background-color: rgb(187, 187, 244); */
+    /* background-color: transparent; */
+    
 }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+  .dropdown-content {
+    /* display: none; */
+    position: absolute;
+    background-color: #f9f9f9;
+    width:21%;
+    top: 24.4%;
+    border-radius: 15px;
+    left: 37.6%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* padding: 12px 16px; */
+    /* z-index: 1; */
+    color: black;
+  }
+  .temp-con{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    height:8vh;
+    width: 25vh;
+    margin: 0% 24%;
+  }
+  .temp-con img{
+    padding-top: 13px;
+  }
+  .humidity{
+    display: flex;
+    justify-content:center;
+  }
+  .humidity img{
+    padding-top: 11px;
+  }
 .weather{
     width: 380px;
     padding: 30px ;
     border-radius:10px ;
-    margin: 50px auto;
+    margin: 2%  auto;
     background-color: #3ab6e7;
+    /* background-image: url("https://images.unsplash.com/photo-1593978301851-40c1849d47d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2VhdGhlciUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"); */
     text-align: center;
+    background-position: top;
     color: white;
 }
 .search{
@@ -74,4 +126,34 @@ body{
 .humidity  .wind {
    font-size: 27px;
    background-color: black;
+}
+.search-data{
+    position: absolute;
+    background-color: rgb(243, 241, 245);
+    width: 36%;
+    top: 17.8vh;
+    left: 28.5%;
+    border-radius:15px ;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.show-weather{
+    /* background-color: #d4e5ec; */
+    background-color: transparent;
+    border: transparent;
+    width: 10%;
+    /* position: absolute; */
+    margin:2% 44% ;
+}
+.forcast{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.forcast-sub-con{
+    /* background-color: #e52f17; */
+    width: 50%;
 }
